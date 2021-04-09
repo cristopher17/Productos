@@ -1,0 +1,14 @@
+CREATE DATABASE Konecta
+USE Konecta
+
+CREATE TABLE Producto(
+idProducto INT PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(60) NOT NULL,
+referencia VARCHAR(30) NOT NULL,
+precio INT NOT NULL,
+peso INT NOT NULL,
+categoria VARCHAR(20) NOT NULL,
+stock INT NOT NULL,
+fechaCreacion DATE NOT NULL,
+fechaUltimaVenta DATETIME DEFAULT NULL
+)
